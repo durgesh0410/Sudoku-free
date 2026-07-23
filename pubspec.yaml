@@ -1,0 +1,32 @@
+name: sudoku_free
+description: A new Flutter project.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations: # 🌍 वैश्विक पहुंच के लिए
+    sdk: flutter
+  google_mobile_ads: ^5.3.1 # 📢 कोड के अनुकूल विज्ञापन वर्ज़न
+  share_plus: ^10.0.0 # 🔗 कोड के अनुकूल शेयर वर्ज़न
+  shared_preferences: ^2.2.3 # 💾 सीक्रेट हाई स्कोर सेव करने के लिए
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: 0.10.0 # 🎯 फिक्स वर्ज़न बिना ^ के
+
+flutter:
+  uses-material-design: true
+
+# 🌟 सुडोकू ऐप आइकॉन की सेटिंग
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/app_icon.png"
