@@ -25,7 +25,7 @@ jobs:
         run: flutter pub get
 
       - name: Build AppBundle
-        run: flutter build appbundle --no-strip-debug-symbols --android-skip-build-dependency-validation
+        run: flutter build appbundle --android-skip-build-dependency-validation
 
       - name: Upload AppBundle
         uses: actions/upload-artifact@v4
