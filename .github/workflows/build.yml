@@ -25,7 +25,10 @@ jobs:
         run: flutter pub get
 
       - name: Build AppBundle
-        run: flutter build appbundle --release --android-skip-build-dependency-validation
+        run: |
+          flutter build appbundle --release --android-skip-build-dependency-validation
+          # Fix for debug signing issue on GitHub actions
+          mkdir -p android/app/upload-keystore
 
       - name: Upload AppBundle
         uses: actions/upload-artifact@v4
